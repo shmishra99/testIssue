@@ -1,5 +1,8 @@
 name: auto-assignment
 on:
+  pull_request:
+   types:
+     - opened
   issues:
     types:
       - opened
