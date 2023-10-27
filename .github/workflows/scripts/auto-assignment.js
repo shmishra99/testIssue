@@ -1,6 +1,6 @@
 module.exports = async ({ github, context }) =>  {
     console.log("line 3", context.payload)
-    const issueNumber = context.payload.issue.number;
+    const issueNumber = context.payload.number;
     
     const assigneesList = ['kuaashish'];
     console.log("assignee list",assigneesList)
