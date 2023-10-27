@@ -1,8 +1,5 @@
 name: auto-assignment
-on:
-  issues:
-    types:
-      - opened
+on: [pull_request_target]
 
 permissions:
   contents: read
