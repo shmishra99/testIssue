@@ -1,5 +1,3 @@
-const CONSTENT_VALUES = require('./constant');
-
 module.exports = async ({ github, context }) =>  {
     const issueNumber = context.payload.issue.number;
     const assigneesList = ['kuaashish'];
