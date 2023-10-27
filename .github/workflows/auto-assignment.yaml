@@ -1,5 +1,9 @@
 name: auto-assignment
 on:
+  pull_request_target:
+    types:
+      - opened
+   
   issues:
     types:
       - opened
