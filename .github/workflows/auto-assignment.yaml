@@ -1,5 +1,8 @@
 name: auto-assignment
-on:
+on: 
+  pull_request:
+     types:
+      - opened
   issues:
     types:
       - opened
@@ -19,5 +22,3 @@ jobs:
           script: |
             const script = require('./\.github/workflows/scripts/auto-assignment.js')
             script({github, context})
-
-            
