@@ -1,6 +1,7 @@
 module.exports = async ({ github, context }) =>  {
+    console.log("line 3", context.payload)
     const issueNumber = context.payload.issue.number;
-    console.log("line 3", context.payload.issue.number)
+    
     const assigneesList = ['kuaashish'];
     console.log("assignee list",assigneesList)
     console.log("entered auto assignment for this issue:  ", issueNumber);
